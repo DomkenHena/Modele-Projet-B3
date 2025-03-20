@@ -37,6 +37,8 @@ Le projet suit la structure standard platformIO. LEs fichiers cpp, contenus dans
 Dans cette structure, chaque état du système a été intégré dans un fichier séparé, ce qui permet de mieux organiser le code et de faciliter la maintenance. Chaque fichier contient les fonctions spécifiques à l'état correspondant.
 Voici une représentation de la structure du projet :
 
+
+```structure
 projet/
 ├── include/          # Fichiers d'en-tête (.h)
 │   ├── config.h      # Configuration globale
@@ -52,6 +54,7 @@ projet/
 │   └── etatFinal.cpp
 ├── platformio.ini    # Configuration PlatformIO et dépendances
 └── README.md         # Documentation
+```
 
 
 ## Configuration du projet
