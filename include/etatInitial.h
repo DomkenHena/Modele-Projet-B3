@@ -3,8 +3,8 @@
 
 #include "config.h"
 
-// Prototypes des fonctions
-void surEntreeEtatInitial();
-void pendantEtatInitial();
+// Déclaration des fonctions
+void EtatInitial();
+bool transition_Initial_Attente();
 
-#endif // ETAT_INITIAL_H
+#endif

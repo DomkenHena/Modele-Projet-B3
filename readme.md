@@ -15,11 +15,13 @@ La librairie Button (https://registry.platformio.org/libraries/mark170987/Button
 - Détection de différents événements (pression, relâchement, pression longue)
 - Configuration automatique des pins en mode INPUT_PULLUP
 
-Voici quelques exemples d'utilisation :
-- `bouton.wasPressed()` : Détecte si le bouton vient d'être pressé
-- `bouton.wasReleased()` : Détecte si le bouton vient d'être relâché
-- `bouton.pressedFor(ms)` : Détecte si le bouton est maintenu enfoncé pendant une durée spécifique
-- `bouton.releasedFor(ms)` : Détecte si le bouton est relâché pendant une durée spécifique
+Voici quelques exemples d'utilisation de la librairie Button :
+
+- `bouton.pressed()` : Retourne `true` uniquement lorsque le bouton est pressé pour la première fois (déclenché sur un front montant).
+- `bouton.released()` : Retourne `true` uniquement lorsque le bouton est relâché pour la première fois (déclenché sur un front descendant).
+- `bouton.toggled()` : Retourne `true` chaque fois que l'état du bouton change (pression ou relâchement).
+- `bouton.read()` : Retourne l'état actuel du bouton (déclenché ou relâché) après détection de rebond.
+- `bouton.has_changed()` : Indique si l'état du bouton a changé depuis le dernier appel à `read()`.
 
 N'oubliez pas d'appeler `bouton.read()` régulièrement pour mettre à jour l'état du bouton.
 
@@ -33,7 +35,7 @@ Cette machine d'état simple comporte quatre états :
 
 ## Structure du projet
 
-Le projet suit la structure standard platformIO. LEs fichiers cpp, contenus dans le dossier src/ continent le code en lui même (gestion de la machine d'état, du bouton,...). Les fichiers h, contenus dans le dossier include/ contiennent les déclarations des fonctions et des variables utilisées dans le code.
+Le projet suit la structure standard platformIO. Les fichiers cpp, contenus dans le dossier src/ continent le code en lui même (gestion de la machine d'état, du bouton,...). Les fichiers h, contenus dans le dossier include/ contiennent les déclarations des fonctions et des variables utilisées dans le code.
 Dans cette structure, chaque état du système a été intégré dans un fichier séparé, ce qui permet de mieux organiser le code et de faciliter la maintenance. Chaque fichier contient les fonctions spécifiques à l'état correspondant.
 Voici une représentation de la structure du projet :
 

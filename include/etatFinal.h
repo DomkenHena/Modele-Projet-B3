@@ -3,8 +3,8 @@
 
 #include "config.h"
 
-// Prototypes des fonctions
-void surEntreeEtatFinal();
-void pendantEtatFinal();
+// Déclaration des fonctions
+void EtatFinal();
+bool transition_Final_Initial();
 
-#endif // ETAT_FINAL_H
+#endif

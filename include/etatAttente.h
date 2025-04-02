@@ -3,8 +3,8 @@
 
 #include "config.h"
 
-// Prototypes des fonctions
-void surEntreeEtatAttente();
-void pendantEtatAttente();
+// Déclaration des fonctions
+void EtatAttente();
+bool transition_Attente_Action();
 
-#endif // ETAT_ATTENTE_H
+#endif

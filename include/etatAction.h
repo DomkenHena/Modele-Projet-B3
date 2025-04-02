@@ -3,8 +3,8 @@
 
 #include "config.h"
 
-// Prototypes des fonctions
-void surEntreeEtatAction();
-void pendantEtatAction();
+// Déclaration des fonctions
+void EtatAction();
+bool transition_Action_Final();
 
-#endif // ETAT_ACTION_H
+#endif
