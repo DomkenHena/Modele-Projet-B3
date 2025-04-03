@@ -39,5 +39,5 @@ void loop() {
   machine.run();
   
   // Petit délai pour éviter une utilisation excessive du CPU
-  delay(10);
+  delay(DELAI_BOUCLE_MS);
 }

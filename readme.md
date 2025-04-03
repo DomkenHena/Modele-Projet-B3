@@ -61,8 +61,10 @@ projet/
 
 ## Configuration du projet
 
-Le fichier `platformio.ini` doit inclure les dépendances suivantes :
+Le fichier `platformio.ini` doit inclure les dépendances suivantes. Pour ajouter des dépendances, vous pouvez ajouter des url ou des noms de bibliothèques dans la section `lib_deps` :
 ```ini
 lib_deps = 
     https://github.com/jrullan/StateMachine.git
     mark170987/Button@^1.0.0
+
+Le fichier `config.h` sert à configurer les broches et les paramètres globaux du projet. Vous pouvez ajuster ces paramètres selon vos besoins. idéalement, aucune valeur ne devrait être définie dans les autres fichiers source.
