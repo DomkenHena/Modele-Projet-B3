@@ -23,6 +23,7 @@ void setup() {
   // Configuration des broches
   pinMode(PIN_LED, OUTPUT);
   // Pas besoin de configurer PIN_BOUTON car la librairie Button s'en charge
+  bouton.begin();
   
   // Configuration des transitions
   etatInitial->addTransition(&transition_Initial_Attente, etatAttente);
@@ -39,6 +40,5 @@ void loop() {
   machine.run();
   
   // Petit délai pour éviter une utilisation excessive du CPU
-  // ce délai est trop court
   delay(DELAI_BOUCLE_MS);
 }
