@@ -69,3 +69,31 @@ lib_deps =
 ```
 
 Le fichier `config.h` sert à configurer les broches et les paramètres globaux du projet. Vous pouvez ajuster ces paramètres selon vos besoins. idéalement, aucune valeur ne devrait être définie dans les autres fichiers source.
+
+
+# Simulation (Wokwi)
+
+Wokwi est un simulateur en ligne qui permet de tester vos projets Arduino sans matériel physique. Voici comment l'utiliser pour ce projet :
+
+## Installation
+1. installez l'extension Wokwi pour VSCode : [Wokwi pour vscode](https://docs.wokwi.com/vscode/getting-started).
+2. Appuyez sur `F1` et tapez `Wokwi: requesta new license` pour obtenir une licence gratuite. Vous pouvez utiliser votre compte github pour vous connecter.
+
+## Configuration du projet
+Deux fichiers sont nécessaires pour l'utilisation de Wokwi :
+
+    - `wokwi.toml` : fichier de configuration du projet. Il doit être à la racine du projet. Il contient les informations sur le projet et les composants matériels utilisés.
+
+    - `diagram.json` : fichier de configuration des composants matériels. Il doit être à la racine du projet. Il contient les informations sur les composants matériels utilisés et leurs connexions. Ce fichier ne peut pas être édité dans VSCode en version gratuite, mais un éditeur est disponible en ligne en créant un projet dans Wokwi. Le contenu peut être copié et collé dans le fichier local.
+
+Ces fichier sont déjà présents dans le projet. Vous pouvez les modifier selon vos besoins. Pour plus d'informations, consultez la documentation officielle de Wokwi : [https://docs.wokwi.com](https://docs.wokwi.com).
+
+*Remarque : pour éditer le fichier `diagram.json`, il est nécessaire de le renommer temporairement (par exemple, `diagram_.json`).*
+
+## Simulation
+
+1. Cliquez sur le bouton "Start Simulation" pour lancer la simulation.(ou appuyez sur `F1` et tapez `Wokwi: Start Simulation`)
+2. Observez le comportement de votre machine d'état et interagissez avec les composants (par exemple, en appuyant sur le bouton).
+3. Si nécessaire, ajustez votre code ou la configuration matérielle pour corriger les erreurs.
+
+Pour plus d'informations, consultez la documentation officielle de Wokwi : [https://docs.wokwi.com](https://docs.wokwi.com).
