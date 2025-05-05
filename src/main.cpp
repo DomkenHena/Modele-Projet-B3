@@ -1,4 +1,9 @@
 #include "config.h"
+
+
+#include <IRremote.hpp>
+#include "IR.h"
+
 #include "etatInitial.h"
 #include "etatAttente.h"
 #include "etatAction.h"
@@ -30,6 +35,8 @@ void setup() {
   etatAttente->addTransition(&transition_Attente_Action, etatAction);
   etatAction->addTransition(&transition_Action_Final, etatFinal);
   etatFinal->addTransition(&transition_Final_Initial, etatInitial);
+
+  setupIR();
   
   // Démarrer la machine dans l'état initial
   machine.run();

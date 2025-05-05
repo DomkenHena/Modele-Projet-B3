@@ -10,6 +10,15 @@
 #include <StateMachine.h>
 #include <Button.h>
 
+
+// ----------------------------------------------------------------
+// Infrarouge
+// protocole NEC uniquement pour ce projet
+#define DECODE_NEC 
+#define EXCLUDE_EXOTIC_PROTOCOLS
+#define RAW_BUFFER_LENGTH  750
+// ----------------------------------------------------------------
+
 // le mot clé #define permet de définir des constantes, les valeurs seront effectivement remplacées
 // dans le code avant la compilation.
 // C'est une bonne pratique de mettre les constantes en majuscules.
@@ -17,6 +26,8 @@
 // Définition des broches
 #define PIN_LED 13
 #define PIN_BOUTON 2
+#define IR_RECEIVE_PIN 7
+
 
 // Définition des délais
 #define DELAI_ATTENTE 3000  // 3 secondes
