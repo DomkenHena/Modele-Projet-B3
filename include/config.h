@@ -33,6 +33,7 @@
 #define DELAI_ATTENTE 3000  // 3 secondes
 #define DELAI_ACTION 5000   // 5 secondes
 #define DELAI_BOUCLE_MS 10 // 10 millisecondes par boucle
+#define BLINK_HALF_TIME 500 // 500 ms pour un clignotement rapide 1Hz
 
 // Déclaration des variables globales (définies dans main.cpp)
 extern StateMachine machine;

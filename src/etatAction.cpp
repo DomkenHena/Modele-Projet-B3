@@ -19,7 +19,7 @@ void EtatAction() {
   bouton.read();
   
   // Faire clignoter la LED rapidement
-  digitalWrite(PIN_LED, (millis() / 100) % 2);
+  digitalWrite(PIN_LED, (millis() / BLINK_HALF_TIME) % 2);
 }
 
 // Après 5 secondes, passer à l'état final
