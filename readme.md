@@ -23,7 +23,6 @@ Voici quelques exemples d'utilisation de la librairie Button :
 - `bouton.read()` : Retourne l'état actuel du bouton (déclenché ou relâché) après détection de rebond.
 - `bouton.has_changed()` : Indique si l'état du bouton a changé depuis le dernier appel à `read()`.
 
-N'oubliez pas d'appeler `bouton.read()` régulièrement pour mettre à jour l'état du bouton.
 
 ### IRRemote
 La librairie IRRemote (https://github.com/Arduino-IRremote/Arduino-IRremote) est utilisée pour gérer les signaux infrarouges. Elle permet de recevoir et de décoder les commandes envoyées par une télécommande infrarouge. 

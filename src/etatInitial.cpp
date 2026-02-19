@@ -14,9 +14,6 @@ void EtatInitial() {
   }
 
   printReceivedIR();
-
-  // Mettre à jour l'état du bouton
-  bouton.read();
 }
 
 /**

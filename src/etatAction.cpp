@@ -14,9 +14,6 @@ void EtatAction() {
     digitalWrite(PIN_LED, LOW);
     tempsDebut = millis();
   }
-
-  // Mettre à jour l'état du bouton (même si on ne l'utilise pas dans cet état)
-  bouton.read();
   
   // Faire clignoter la LED rapidement
   digitalWrite(PIN_LED, (millis() / BLINK_HALF_TIME) % 2);

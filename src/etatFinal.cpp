@@ -10,11 +10,10 @@ void EtatFinal() {
   if(machine.executeOnce) {
     Serial.println("Entrée dans l'ÉTAT FINAL");
     digitalWrite(PIN_LED, LOW);
+    // oublier l'état du bouton pour éviter une transition immédiate si le bouton était déjà pressé en entrant dans cet état
+    bouton.toggled();
   }
-  
-  // Mettre à jour l'état du bouton
-  bouton.read();
-  
+    
   // Exemple d'utilisation d'autres fonctionnalités de la librairie Button
   if (bouton.released()) {
     Serial.println("Bouton relâché dans l'état final");
