@@ -33,6 +33,7 @@ void setup() {
   // Configuration des transitions
   etatInitial->addTransition(&transition_Initial_Attente, etatAttente);
   etatAttente->addTransition(&transition_Attente_Action, etatAction);
+  etatAttente->addTransition(&transition_Attente_Initial, etatInitial);
   etatAction->addTransition(&transition_Action_Final, etatFinal);
   etatFinal->addTransition(&transition_Final_Initial, etatInitial);
 

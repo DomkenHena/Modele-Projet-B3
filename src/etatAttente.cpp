@@ -13,8 +13,15 @@ void EtatAttente() {
     digitalWrite(PIN_LED, HIGH);
   }
   
-  // Mettre à jour l'état du bouton (même si on ne l'utilise pas dans cet état)
-  bouton.read();
+}
+
+/**
+ * Fonction de transition de l'état d'attente vers l'état initial
+ * @param aucun
+ * @return true si le bouton est pressé, false sinon
+ */
+bool transition_Attente_Initial() {
+  return bouton.pressed();
 }
 
 /**
