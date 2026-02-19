@@ -33,7 +33,7 @@ L'import de cette librairie est particulier, voir les commentaires dans le fichi
 
 Cette machine d'état simple comporte quatre états :
 1. **État Initial** : Attend qu'un bouton soit pressé
-2. **État Attente** : Attend pendant 3 secondes (LED allumée)
+2. **État Attente** : Attend pendant 3 secondes ou qu'un bouton soit pressé (LED allumée) 
 3. **État Action** : Fait clignoter la LED pendant 5 secondes
 4. **État Final** : Attend qu'un bouton soit pressé pour recommencer
 
