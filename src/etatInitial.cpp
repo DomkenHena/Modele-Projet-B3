@@ -1,5 +1,4 @@
 #include "etatInitial.h"
-#include "IR.h"
 
 /**
  * Fonction exécutée pendant l'état initial
@@ -12,8 +11,7 @@ void EtatInitial() {
     Serial.println("Entrée dans l'ÉTAT INITIAL");
     digitalWrite(PIN_LED, LOW);
   }
-
-  printReceivedIR();
+  
 }
 
 /**

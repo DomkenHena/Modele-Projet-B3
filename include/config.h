@@ -26,7 +26,6 @@
 // Définition des broches
 #define PIN_LED 13
 #define PIN_BOUTON 2
-#define IR_RECEIVE_PIN 7
 
 
 // Définition des délais

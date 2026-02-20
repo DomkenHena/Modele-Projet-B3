@@ -24,11 +24,6 @@ Voici quelques exemples d'utilisation de la librairie Button :
 - `bouton.has_changed()` : Indique si l'état du bouton a changé depuis le dernier appel à `read()`.
 
 
-### IRRemote
-La librairie IRRemote (https://github.com/Arduino-IRremote/Arduino-IRremote) est utilisée pour gérer les signaux infrarouges. Elle permet de recevoir et de décoder les commandes envoyées par une télécommande infrarouge. 
-
-L'import de cette librairie est particulier, voir les commentaires dans le fichier main.cpp et IR.h pour plus d'informations.
-
 ## Fonctionnement de l'exemple
 
 Cette machine d'état simple comporte quatre états :
@@ -52,14 +47,12 @@ projet/
 │   ├── etatAttente.h
 │   ├── etatAction.h
 │   ├── etatFinal.h
-│   └── IR.h
 ├── src/              # Fichiers source (.cpp)
 │   ├── main.cpp      # Fichier principal
 │   ├── etatInitial.cpp
 │   ├── etatAttente.cpp
 │   ├── etatAction.cpp
 │   ├── etatFinal.cpp
-│   └── IR.cpp
 ├── platformio.ini    # Configuration PlatformIO et dépendances
 └── README.md         # Documentation
 ```
@@ -72,7 +65,6 @@ Le fichier `platformio.ini` doit inclure les dépendances suivantes. Pour ajoute
 lib_deps = 
     https://github.com/jrullan/StateMachine.git
     mark170987/Button@^1.0.0
-    https://github.com/Arduino-IRremote/Arduino-IRremote.git
 ```
 
 Le fichier `config.h` sert à configurer les broches et les paramètres globaux du projet. Vous pouvez ajuster ces paramètres selon vos besoins. idéalement, aucune valeur ne devrait être définie dans les autres fichiers source.
